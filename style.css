@@ -95,7 +95,7 @@ header section .left_bx,
   position: relative;
   width: 60%;
   height: 100%;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 
 header section .right_bx {
@@ -107,7 +107,7 @@ header section .left_bx {
 }
 
 header section .left_bx .content {
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   color: #fff;
 }
 
@@ -168,4 +168,132 @@ header section .left_bx .content .nutrition_bx .card h6 {
 }
 header section .left_bx .content .nutrition_bx .card:nth-child(1) h6 {
   background: rgb(56, 126, 206);
+}
+header section .left_bx .content p:nth-child(5) {
+  font-size: 10px;
+  color: rgb(255, 255, 255, 0.5);
+  margin-top: 5px;
+}
+header section .left_bx .content button {
+  margin-top: 30px;
+  padding: 3px 40px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  transition: 0.3s linear;
+  cursor: var(--cursor);
+}
+header section .left_bx .content button:hover {
+  background-color: #2d71c0;
+}
+header section .left_bx .item_bx {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #fff; */
+  margin-top: 19px;
+}
+
+header section .left_bx .card_pepsi {
+  width: 30px;
+  /* border: 1px solid #fff; */
+  margin-right: 30px;
+  overflow: hidden;
+  cursor: var(--cursor);
+  z-index: 99999;
+}
+header section .left_bx .card_pepsi img {
+  width: 30px;
+  transition: 0.3s linear;
+}
+header section .left_bx .card_pepsi h6 {
+  width: 100%;
+  text-align: center;
+  color: #2c6cbb;
+}
+header section .left_bx .card:hover h6 {
+  color: #fff;
+}
+header section .right_bx img {
+  width: 430px;
+  margin: 20px 0px 0px -180px;
+}
+header section .right_bx .right_btn_bx {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+header section .right_bx .right_btn_bx span {
+  font-size: 8px;
+  font-weight: 600;
+  color: rgb(255, 255, 255, 0.5);
+  margin-right: 7px;
+}
+header section .right_bx .right_btn_bx .bi {
+  font-size: 8px;
+  font-weight: 600;
+  color: rgb(255, 255, 255, 0.5);
+  margin-right: 7px;
+}
+header section .right_bx .right_btn_bx .bi {
+  font-size: 12px;
+  cursor: var(--cursor);
+  transition: .3s linear;
+}
+header section .right_bx .right_btn_bx .bi:hover {
+ color: #2d71c0;
+}
+header section .right_bx .level {
+  width: 30px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+header section .right_bx .level h6 {
+  width: 08px;
+  height: 1px;
+  background: rgb(255, 255, 255, 0.5);
+  margin-top: 13px;
+}
+header section .right_bx .level h6:nth-child(3) {
+  width: 18px;
+  height: 1px;
+  background: #fff;
+}
+header .ml_bx {
+  position: absolute;
+  width: 110px;
+  height: 150px;
+  background: rgb(44, 138, 245);
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  padding: 20px 0px 0px 20px;
+}
+header .ml_bx p {
+  font-size: 9px;
+}
+header .ml_bx h6 {
+  font-size: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+header .ml_bx h5 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: #196bd0;
+  bottom: 0;
+  left: 0;
 }
