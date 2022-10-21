@@ -217,7 +217,7 @@ header section .left_bx .card_pepsi {
   margin-right: 30px;
   overflow: hidden;
   cursor: var(--cursor);
-  z-index: 99999;
+  z-index: 99999999999999;
 }
 header section .left_bx .card_pepsi img {
   width: 30px;

@@ -13,7 +13,7 @@ const pepsi = [
     protien_per: "0%",
     ml: "250ml",
     poster1: "assets/1 Pepsi white.png",
-    poster2: "assets/1 Pepsi blue.png",
+    poster2: "assets/1 Pepsi blues.png",
     main_poster: "assets/pepsi diet.png",
   },
   {
@@ -48,7 +48,7 @@ const pepsi = [
     ml: "500ml",
     poster1: "assets/3 Pepsi white.png",
     poster2: "assets/3 Pepsi blue.png",
-    main_poster: "assets/pepsi diet.png",
+    main_poster: "assets/pepsi .5ltr.png",
   },
   {
     name: "Pepsi 1 LTR",
@@ -65,7 +65,7 @@ const pepsi = [
     ml: "1 LTR",
     poster1: "assets/4 Pepsi white.png",
     poster2: "assets/4 Pepsi blue.png",
-    main_poster: "assets/pepsi 1LTR.png",
+    main_poster: "assets/pepsi 1ltr.png",
   },
   {
     name: "Pepsi 1.5 LTR",
@@ -82,7 +82,7 @@ const pepsi = [
     ml: "1.5 LTR",
     poster1: "assets/5 Pepsi white.png",
     poster2: "assets/5 Pepsi blue.png",
-    main_poster: "assets/pepsi diet.png",
+    main_poster: "assets/pepsi 1.5ltr.png",
   },
   {
     name: "Pepsi 2 LTR",
@@ -97,19 +97,37 @@ const pepsi = [
     protien: "og",
     protien_per: "0%",
     ml: "2 LTR",
-    poster1: "assets/ 6 Pepsi white.png",
-    poster2: "assets/ 6 Pepsi blue.png",
+    poster1: "assets/6 Pepsi white.png",
+    poster2: "assets/6 Pepsi blue.png",
     main_poster: "assets/pepsi 2ltr.png",
   },
 ];
 
-Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele, i) => {
-  ele.addEventListener('mouseover', () => {
-    document.getElementsByClassName('pepsi_hover_img')[i].src =
+Array.from(document.getElementsByClassName("card_pepsi")).forEach((ele, i) => {
+  ele.addEventListener("mouseover", () => {
+    document.getElementsByClassName("pepsi_hover_img")[i].src =
       pepsi[i].poster1;
   });
-  ele.addEventListener('mouseout', () => {
-    document.getElementsByClassName('pepsi_hover_img')[i].src =
+  ele.addEventListener("mouseout", () => {
+    document.getElementsByClassName("pepsi_hover_img")[i].src =
       pepsi[i].poster2;
+  });
+});
+Array.from(document.getElementsByClassName("card_pepsi")).forEach((ele, i) => {
+  ele.addEventListener("click", () => {
+    document.getElementById("Main_bottle").src = pepsi[i].main_poster;
+    document.getElementById("main_content").innerText = pepsi[i].name;
+    document.getElementById("ml_title").innerText = pepsi[i].ml;
+    document.getElementById("ml_title").innerText = pepsi[i].ml;
+    document.getElementById("cl").innerText = pepsi[i].amount;
+    document.getElementById("cl1").innerText = pepsi[i].amount_per;
+    document.getElementById("fat").innerText = pepsi[i].fat;
+    document.getElementById("fat1").innerText = pepsi[i].fat_per;
+    document.getElementById("sodium").innerText = pepsi[i].sodium;
+    document.getElementById("sodium1").innerText = pepsi[i].sodium_per;
+    document.getElementById("carbohydrate").innerText = pepsi[i].carbohytred;
+    document.getElementById("carbohydrate1").innerText = pepsi[i].carbohytred_per;
+    document.getElementById("protien").innerText = pepsi[i].protien;
+    document.getElementById("protien1").innerText = pepsi[i].protien_per;
   });
 });
