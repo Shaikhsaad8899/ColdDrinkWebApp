@@ -28,7 +28,7 @@ const pepsi = [
     carbohytred_per: "14%",
     protien: "og",
     protien_per: "0%",
-    ml: "250ml",
+    ml: "330ml",
     poster1: "assets/2 can white.png",
     poster2: "assets/2 can blue.png",
     main_poster: "assets/can.png",
@@ -126,8 +126,53 @@ Array.from(document.getElementsByClassName("card_pepsi")).forEach((ele, i) => {
     document.getElementById("sodium").innerText = pepsi[i].sodium;
     document.getElementById("sodium1").innerText = pepsi[i].sodium_per;
     document.getElementById("carbohydrate").innerText = pepsi[i].carbohytred;
-    document.getElementById("carbohydrate1").innerText = pepsi[i].carbohytred_per;
+    document.getElementById("carbohydrate1").innerText =
+      pepsi[i].carbohytred_per;
     document.getElementById("protien").innerText = pepsi[i].protien;
     document.getElementById("protien1").innerText = pepsi[i].protien_per;
   });
+});
+
+let index = 1;
+document.getElementById("left_btn").addEventListener("click", () => {
+  index -= 1;
+  if (index < 0) {
+    index = pepsi.length;
+  }
+  document.getElementById("Main_bottle").src = pepsi[index].main_poster;
+  document.getElementById("main_content").innerText = pepsi[index].name;
+  document.getElementById("ml_title").innerText = pepsi[index].ml;
+  document.getElementById("ml_title").innerText = pepsi[index].ml;
+  document.getElementById("cl").innerText = pepsi[index].amount;
+  document.getElementById("cl1").innerText = pepsi[index].amount_per;
+  document.getElementById("fat").innerText = pepsi[index].fat;
+  document.getElementById("fat1").innerText = pepsi[index].fat_per;
+  document.getElementById("sodium").innerText = pepsi[index].sodium;
+  document.getElementById("sodium1").innerText = pepsi[index].sodium_per;
+  document.getElementById("carbohydrate").innerText = pepsi[index].carbohytred;
+  document.getElementById("carbohydrate1").innerText =
+    pepsi[index].carbohytred_per;
+  document.getElementById("protien").innerText = pepsi[index].protien;
+  document.getElementById("protien1").innerText = pepsi[index].protien_per;
+});
+document.getElementById("right_btn").addEventListener("click", () => {
+  index ++;
+  if (index > pepsi.length) {
+    index = 0;
+  }
+  document.getElementById("Main_bottle").src = pepsi[index].main_poster;
+  document.getElementById("main_content").innerText = pepsi[index].name;
+  document.getElementById("ml_title").innerText = pepsi[index].ml;
+  document.getElementById("ml_title").innerText = pepsi[index].ml;
+  document.getElementById("cl").innerText = pepsi[index].amount;
+  document.getElementById("cl1").innerText = pepsi[index].amount_per;
+  document.getElementById("fat").innerText = pepsi[index].fat;
+  document.getElementById("fat1").innerText = pepsi[index].fat_per;
+  document.getElementById("sodium").innerText = pepsi[index].sodium;
+  document.getElementById("sodium1").innerText = pepsi[index].sodium_per;
+  document.getElementById("carbohydrate").innerText = pepsi[index].carbohytred;
+  document.getElementById("carbohydrate1").innerText =
+    pepsi[index].carbohytred_per;
+  document.getElementById("protien").innerText = pepsi[index].protien;
+  document.getElementById("protien1").innerText = pepsi[index].protien_per;
 });

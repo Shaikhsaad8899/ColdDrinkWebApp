@@ -26,7 +26,7 @@ body {
 header {
   position: relative;
   width: 60%;
-  height: 80%;
+  height: max-content;
   background: linear-gradient(100deg, #153777, #2765b2);
   box-shadow: 0px 30px 25px -1px rgb(0, 0, 0, 0.6);
   border-radius: 08px;
@@ -101,19 +101,17 @@ header section .left_bx,
 header section .right_bx {
   width: 40%;
 }
-header section .left_bx #left_btn{
-position: absolute;
-left: 0;
-top: 60px;
-color: #fff;
-font-size: 12px;
-cursor: var(--cursor);
-transition: .3s linear;
-
+header section .left_bx #left_btn {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  color: #fff;
+  font-size: 12px;
+  cursor: var(--cursor);
+  transition: 0.3s linear;
 }
-header section .left_bx  #left_btn{
-color: #2d71c0;
-
+header section .left_bx #left_btn {
+  color: #2d71c0;
 }
 
 header section .left_bx {
@@ -312,4 +310,206 @@ header .ml_bx h5 {
   background: #196bd0;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1246px) {
+  header {
+    width: 90%;
+    height: max-content;
+
+    transition: 1s linear;
+  }
+  header .ml_bx {
+    position: absolute;
+    width: 95px;
+    height: 120px;
+    background: rgb(44, 138, 245);
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    margin: 5px;
+    color: #fff;
+    padding: 15px 0px 0px 15px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  header {
+    width: 90%;
+    height: max-content;
+  }
+  header section .left_bx {
+    padding: 40px 0px 0px 20px;
+  }
+  header section .left_bx .content {
+    /* border: 1px solid #fff; */
+    color: #fff;
+    width: 100%;
+    height: max-content;
+  }
+}
+@media screen and (max-width: 780px) {
+  header {
+    width: 100%;
+    height: max-content;
+  }
+  header section {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  header section .left_bx,
+  .right_bx {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header section .right_bx {
+    width: 100%;
+    height: 40%;
+  }
+  header section .right_bx img {
+    width: 310px;
+  }
+  header section .right_bx .right_btn_bx {
+    top: 45%;
+  }
+  header section .left_bx .content button {
+    margin-top: 20px;
+  }
+  header section .left_bx .item_bx {
+    margin-top: 0px;
+  }
+  header section .left_bx #left_btn {
+    top: -37%;
+    z-index: 9999999999999999999;
+  }
+  header nav ul li {
+    padding: 3px 5px;
+  }
+  header nav ul li a {
+    font-size: 9px;
+  }
+  header .ml_bx {
+    border-radius: 05px;
+    width: 80px;
+    height: 93px;
+    padding: 10px 0px 0px 5px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  header {
+    width: 90%;
+    height: max-content;
+
+    transition: 1s linear;
+  }
+  header nav ul {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+  }
+  header .ml_bx {
+    width: 80px;
+    border-radius: 05px;
+
+    height: 93px;
+    padding: 10px 0px 0px 5px;
+  }
+  header section .left_bx .content .nutrition_bx {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 96%;
+  }
+}
+@media screen and (max-width: 452px) {
+  header {
+    width: 90%;
+    height: max-content;
+    transition: 1s linear;
+  }
+  header nav ul {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+  }
+  header .ml_bx {
+    width: 80px;
+    border-radius: 05px;
+
+    height: 50x;
+    padding: 10px 0px 0px 5px;
+  }
+  header section .left_bx.content .nutrition_bx .card {
+    width: 66px;
+  }
+  header section .left_bx.content .nutrition_bx .card:nth-child(4) p {
+    margin-top: 6px;
+  }
+  header section .left_bx .item_bx .card_pepsi {
+    margin-right: 20px;
+  }
+  header section .right_bx .right_btn_bx span {
+    display: none;
+  }
+
+  header section .right_bx img {
+    margin: 20px 0px 0px -120px;
+  }
+  header section .left_bx .content p:nth-child(2) {
+    font-size: 9px;
+  }
+}
+@media (min-width: 375px) and (max-width: 390px) {
+  header {
+    width: 90%;
+
+    transition: 1s linear;
+  }
+  header section .left_bx.content .nutrition_bx .card {
+    width: 55px;
+    height: 70px;
+  }
+  header section .left_bx .item_bx {
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+  }
+  header section .left_bx.content .nutrition_bx .card h3 {
+    font-size: 14px;
+  }
+  header section .left_bx .content p:nth-child(2) {
+    font-size: 8px;
+  }
+  header nav .buy_nav_btn {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+  header .ml_bx {
+    width: 62px;
+    border-radius: 05px;
+    height: 35px;
+    padding: 3px 0px 0px 5px;
+  }
+  header .ml_bx h3 {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  header .ml_bx h6 {
+    display: none;
+  }
+  header section .left_bx {
+    width: 100%;
+    height: max-content;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  header section .left_bx .item_bx {
+    display: none;
+  }
 }
